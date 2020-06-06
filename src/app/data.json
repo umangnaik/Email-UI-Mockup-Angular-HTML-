@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "from": "aaa@example.com",
+        "to": "zzzzz.zzz1234@example.com",
+        "subject": "[ HR-888 ] Notice of official announcement",
+        "date": "0:20",
+        "numberOfmail": 1,
+        "isAttachment": true
+    },
+    {
+        "id": 2,
+        "from": "bbb.bbbb@exam",
+        "to": "yyy@example.com",
+        "subject": "[web:333] 'Web Contact' ",
+        "date": "0:45",
+        "numberOfmail": 2,
+        "isAttachment": false
+    },
+    {
+        "id": 3,
+        "from": "234ccc@example.com",
+        "to": "xxx123242@example.com",
+        "subject": "Happy New Year! Greetings for the New Year.",
+        "date": "jan 1",
+        "numberOfmail": 0,
+        "isAttachment": true
+    },
+    {
+        "id": 4,
+        "from": "ddd111@example.com",
+        "to": "zzz.zzz@example.com",
+        "subject": "サントリーの最高経営責任者、コロナウイルスが日本のダイニングシーンを非難すると20％のレストランが失敗する可能性がある",
+        "date": "2019/12/31",
+        "numberOfmail": 0,
+        "isAttachment": false
+    },
+    {
+        "id": 5,
+        "from": "bbb.bbbb74447@example.com",
+        "to": "yyy@example.com",
+        "subject": "三重県、第1回県を遠征LGBT個人禁止に",
+        "date": "2019/12/30",
+        "numberOfmail": 0,
+        "isAttachment": true
+    },{
+        "id": 6,
+        "from": "234ccc@example.com",
+        "to": "xxx123242@example.com",
+        "subject": "東京の虎ノ門ヒルズに新しい地下鉄駅がオープン",
+        "date": "2019/11/28",
+        "numberOfmail": 5,
+        "isAttachment": false
+    },
+    {
+        "id": 7,
+        "from": "ddd111@example.com",
+        "to": "zzz.zzz@example.com",
+        "subject": "[HR-899] COVIDによる助成金発表のお知らせ。 日本政府発表",
+        "date": "2019/11/25",
+        "numberOfmail": 1000,
+        "isAttachment": true
+    },
+    {
+        "id": 8,
+        "from": "bbb.bbbb74447@example.com",
+        "to": "yyy@example.com",
+        "subject": "[HR-999]会議のフォローアップ-会議の件名",
+        "date": "2019/09/28",
+        "numberOfmail": 8,
+        "isAttachment": true
+    },
+    {
+        "id": 9,
+        "from": "bbb.bbbb74447@example.com",
+        "to": "yyy@example.com",
+        "subject": "[HR-1089]公式発表のお知らせ明けましておめでとうございます！ 新年のご挨拶。",
+        "date": "2019/05/11",
+        "numberOfmail": 0,
+        "isAttachment": false
+    },{
+        "id": 10,
+        "from": "234ccc@example.com",
+        "to": "xxx123242@example.com",
+        "subject": "【HR-1555】公式発表のお知らせ",
+        "date": "2019/05/01",
+        "numberOfmail": 258,
+        "isAttachment": false
+    },
+    {
+        "id": 11,
+        "from": "ddd111@example.com",
+        "to": "zzz.zzz@example.com",
+        "subject": "[ HR-1589 ] 明けましておめでとうございます！ 新年のご挨拶。",
+        "date": "2019/05/01",
+        "numberOfmail": 0,
+        "isAttachment": false
+    },
+    {
+        "id": 12,
+        "from": "bbb.bbbb74447@example.com",
+        "to": "yyy@example.com",
+        "subject": "今年の報告ではCOVID-19",
+        "date": "2019/04/31",
+        "numberOfmail": 15,
+        "isAttachment": true
+    }
+]

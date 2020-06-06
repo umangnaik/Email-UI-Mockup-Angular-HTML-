@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
-
-
+import { OrderbyPipe } from './order-by.pipe';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+// Import neccessary module & component
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderbyPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BsDatepickerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,66 @@
+body {padding: 0px; margin: 0px; font-family: 'Roboto', sans-serif;}
+.subject_trunc{width: 250px;text-overflow:ellipsis;overflow: hidden;white-space:nowrap;}
+.date_align_color {color: black;margin-left: 8px;}
+.input-group.date {width: 300px; margin: 35px 0 20px;}
+.input-group.date .form-control {background: url('../assets/icon_calender.svg') 20px center no-repeat; background-size: 20px auto; border-radius: 10px 0px 0px 10px; padding: 12px 0 12px 52px;}
+.input-group.date .input-group-addon {padding: 12px 13px; border: 1px solid #ced4da; border-left: 0px; border-radius: 0px 10px 10px 0px;}
+.input-group.date .input-group-addon svg {width: 20px; height: 20px;}
+.results-text {border-bottom: solid 1px #e6e6e6; font-size: 18px; color: #666666; line-height: 1; font-weight: 600; padding: 8px 0;}
+
+.logo-boxs {display: flex; flex-wrap: wrap; justify-content: center; align-items: center; height: calc(100vh - 150px);}
+
+
+.table-boxs {display: flex; flex-wrap: wrap; width: 100%;}
+.table-boxs .table-tbody, .table-boxs .table-thead {display: flex; flex-wrap: wrap; width: 100%; border-bottom: solid 1px #e6e6e6; padding: 12px 0px; line-height: 1;}
+
+.table-boxs .table-thead .from, .table-boxs .table-thead .to, .table-boxs .table-thead .subject, .table-boxs .table-thead .date {display: flex; flex-wrap: wrap; font-size: 18px; font-weight: 500; color: #666666; align-items: center;}
+.table-boxs .table-thead .from svg, .table-boxs .table-thead .to svg, .table-boxs .table-thead .subject svg, .table-boxs .table-thead .date svg {width: 15px; height: 15px; margin-left: 10px;}
+
+.table-boxs .table-tbody .from, .table-boxs .table-tbody .to, .table-boxs .table-tbody .subject, .table-boxs .table-tbody .date { font-size: 16px; color: #333333; font-weight: 400;}
+
+.table-boxs .table-tbody:hover .from a, .table-boxs .table-tbody:hover .from, .table-boxs .table-tbody:hover .to, .table-boxs .table-tbody:hover .subject, .table-boxs .table-tbody:hover .date svg, .table-boxs .table-tbody:hover .to a {color: #0033dd; fill: #0033dd; cursor: pointer;}
+
+.table-boxs .table-tbody .from, .table-boxs .table-thead .from {width: 20%; padding: 0 15px;}
+.table-boxs .table-tbody .from a {color: #333; text-decoration: none; text-overflow: ellipsis; overflow: hidden; display: block;}
+.table-boxs .table-tbody .to, .table-boxs .table-thead .to {width: 25%; padding: 0 15px; position: relative; display: flex; flex-wrap: wrap; align-items: center;}
+.table-boxs .table-tbody .to a {width: 75%; text-overflow: ellipsis; overflow: hidden; white-space: pre; padding: 0; color: #333; text-decoration: none;}
+.table-boxs .table-tbody .to span {padding: 5px 10px; font-size: 14px; background: #888888; line-height: 1; color: #fff; border-radius: 7px; margin-left: auto;}
+.table-boxs .table-tbody .subject, .table-boxs .table-thead .subject {width: 45%; padding: 0 15px;}
+.table-boxs .table-tbody .date, .table-boxs .table-thead .date {width: 10%; padding: 0 15px; font-weight: 600;}
+.table-boxs .table-tbody .date svg {width: 15px; height: 15px; margin-left: -15px;}
+
+
+
+@media (max-width: 991px) {
+	.table-boxs .table-tbody .from, .table-boxs .table-thead .from,
+	.table-boxs .table-tbody .to, .table-boxs .table-thead .to,
+	.table-boxs .table-tbody .subject, .table-boxs .table-thead .subject,
+	.table-boxs .table-tbody .date, .table-boxs .table-thead .date {padding: 0 10px;}
+
+	.table-boxs .table-tbody .subject, .table-boxs .table-thead .subject {width: 43%}
+	.table-boxs .table-tbody .date, .table-boxs .table-thead .date {width: 12%;}
+	.table-boxs .table-tbody .to a {width: 73%;}
+
+}
+
+@media (max-width: 767px) {
+
+	.mail-bg .container {padding: 0px; overflow: hidden;}
+
+	.input-group.date {margin: 20px 10px; width: auto;}
+	.results-text {padding: 8px 10px;}
+
+	.table-boxs .table-thead .from, .table-boxs .table-thead .to, .table-boxs .table-thead .subject, .table-boxs .table-thead .date {width: auto; font-size: 14px; border-right: solid 1px #797979;}
+	.table-boxs .table-thead .date {border-right: 0;}
+	.table-boxs .table-thead .from svg, .table-boxs .table-thead .to svg, .table-boxs .table-thead .subject svg, .table-boxs .table-thead .date svg {width: 10px; height: 10px; margin-left: 5px;}
+
+	.table-boxs .table-tbody {padding: 15px 10px; position: relative;}
+	.table-boxs .table-tbody:before {content: ''; position: absolute; left: 10px; top: 10px; background: url(../assets/icon_mail_sp.svg) 0 8px no-repeat; background-size: 15px auto; width: 20px; height: 50px;}
+	.table-boxs .table-tbody .from {width: 100%; padding: 0px 0 5px 20px; font-weight: 600;}
+	.table-boxs .table-tbody .to {width: 100%; padding: 0px 0 5px 20px;}
+	.table-boxs .table-tbody .to a {width: 90%;}
+	.table-boxs .table-tbody .to span {padding: 4px 8px; font-size: 12px; border-radius: 5px;}
+	.table-boxs .table-tbody .subject {width: 100%; padding: 5px 0 0 0;}
+	.table-boxs .table-tbody .date {position: absolute; right: 10px; top: 10px; padding: 0px; font-weight: 400; width: auto;}
+
+}

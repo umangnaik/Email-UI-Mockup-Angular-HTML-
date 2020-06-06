@@ -1,20 +1,110 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<section class="mail-bg">
 
+	<!-- ******* Call CSS file we can enhance them like pure angular way binding of code structure ******* -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">
+
+	<!-- ******* Call JS file we can enhance them like pure angular way binding of code structure ******* -->
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/bootstrap-datepicker.min.js"></script>
+
+	<!-- ******* Section for displaying html where not filterd data found ******* -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group date" data-provide="datepicker">
+					<input title="dateRange" class="form-control" #drp="bsDaterangepicker" bsDaterangepicker
+						placeholder="01/01/2020 - 30/12/2020" [maxDate]="maxDate" [minDate]="minDate">
+					<div class="input-group-addon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.9803 18">
+							<defs>
+								<style>
+									.a {
+										fill: #666;
+									}
+								</style>
+							</defs>
+							<title>icon_search</title>
+							<path class="a"
+								d="M17.81684,17.04048,12.86753,12.064a7.33089,7.33089,0,1,0-.79573.79645L17.018,17.83373a.5629.5629,0,1,0,.79885-.79325ZM7.32474,13.47375a6.16023,6.16023,0,0,1-6.16583-6.1546V7.31352a6.16022,6.16022,0,1,1,6.16583,6.16023Z" />
+						</svg>
+					</div>
+				</div>
+				<div class="results-text">Results: <span>0 mail(s)</span></div>
+				<div class="logo-boxs">
+					<img src="../assets/logo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ******* Section for displaying html where data found ******* -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group date" data-provide="datepicker">
+					<input title="dateRange" class="form-control" #drp="bsDaterangepicker" bsDaterangepicker
+						placeholder="01/01/2019 - 30/12/2019" [maxDate]="maxDate" [minDate]="minDate">
+					<div class="input-group-addon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.9803 18">
+							<defs>
+								<style>
+									.a {
+										fill: #666;
+									}
+								</style>
+							</defs>
+							<title>icon_search</title>
+							<path class="a"
+								d="M17.81684,17.04048,12.86753,12.064a7.33089,7.33089,0,1,0-.79573.79645L17.018,17.83373a.5629.5629,0,1,0,.79885-.79325ZM7.32474,13.47375a6.16023,6.16023,0,0,1-6.16583-6.1546V7.31352a6.16022,6.16022,0,1,1,6.16583,6.16023Z" />
+						</svg>
+					</div>
+				</div>
+				<div class="results-text">Results: <span>{{this.email_Content_json.length}} mail(s)</span></div>
+
+				<div class="table-boxs">
+					<div class="table-thead">
+						<div class="from">Form </div>
+						<div class="to">To </div>
+						<div class="subject">Subject</div>
+
+						<!-- ******* Section for Date sorting using angular sort data in asc and dsc way ******* -->
+
+						<div class="date" (click)="sort('date')">Date <i 
+								class="date_align_color fa"
+								[ngClass]="{'fa-sort': column != 'date', 'fa-sort-asc': (column == 'date' && isDesc), 'fa-sort-desc': (column == 'date' && !isDesc) }"
+								aria-hidden="true"> </i></div>
+					</div>
+
+					<!-- ******* Section for binding json with angular code ******* -->
+
+					<div class="table-tbody"
+						*ngFor="let row of this.email_Content_json | orderBy: {property: column, direction: direction}">
+						<div class="from"><a href="#">{{row.from}}</a></div>
+						<div class="to"><a href="#">{{row.to}}</a> <span
+								*ngIf="row.numberOfmail">+{{row.numberOfmail}}</span></div>
+						<div class="subject subject_trunc">{{row.subject}}</div>
+						<div class="date"><span *ngIf="row.isAttachment ===  true"><svg
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.93083 15">
+									<path
+										d="M6.799,3.6254A2.30522,2.30522,0,1,0,3.56718,6.85622l4.304,4.304a.5222.5222,0,0,0,.7385-.7385l-4.304-4.304c-.53586-.53586-.87743-1.33808-.23084-1.98466.64553-.64659,1.4488-.304,1.98466.23189L11.032,9.3364c1.90632,1.90841,2.38159,2.78793,1.24615,3.92441-1.149,1.148-2.367.86385-4.20121-.96935L2.367,6.57941C1.1741,5.38653.33845,3.43842,1.90633,1.87159c1.86141-1.86141,3.98708-.03134,4.59293.57555l5.11038,5.11142a.5222.5222,0,0,0,.7385-.7385L7.23776,1.70864C5.18625-.34288,2.86-.56223,1.16678,1.13308c-1.711,1.71-1.5261,4.196.4617,6.18484l5.711,5.711C7.96726,13.6567,9.31161,15,10.85756,15a3.01214,3.01214,0,0,0,2.16014-1.00173c2.07554-2.07658.15564-3.99857-1.24616-5.40141Z" />
+								</svg></span> {{row.date}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
